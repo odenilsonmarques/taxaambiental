@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taxas Ambientais</title>
+    <link rel="shortcut icon" href="assets/img/calculadora.png" type="image/x-icon"/>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="assets/css/estiloUfm.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2>TAXAS AMBIENTAIS</h2><hr><br>
+                </div>
+            </div>
+        </div>
+    </header>
+    <article>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="form-group">
+                        <label for="tipoDeEmpresa">TIPO DE PESSOA / EMPRESA</label><br>
+                        <select name="tipoDeEmpresa" id="tipoDeEmpresa" class="form-control" >
+                            <option value="">SELECIONE</option>
+                            <option value="PESSOA_FISICA">PESSOA FISICA</option>
+                            <option value="EMPRESA_PEQUENA">EMPRESA PEQUENA</option>
+                            <option value="EMPRESA_MEDIA">EMPRESA MEDIA</option>
+                            <option value="EMPRESA_GRANDE">EMPRESA GRANDE</option>
+                            <option value="MICRO_EMPRESA">MICRO EMPRESA</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="tipoDeLicenca">TIPO DE LICENÇA</label><br>
+                        <select name="tipoDeLicenca" id="tipoDeLicenca" class="form-control">
+                            <option value="">SELECIONE</option>
+                            <option value="ALVARA_VERDE">ALVARÁ VERDE</option>
+                            <option value="LICENCA_PREVIA">LICENÇA PREVIA</option>
+                            <option value="LICENCA_DE_INSTALACAO">LICENCA DE INSTALACAO</option>
+                            <option value="LICENCA_DE_OPERACAO">LICENCA DE OPERACAO</option>
+                            <option value="LICENCA_CORRETIVA">LICENÇA CORRETIVA</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="tipoDeGrau">GRAU</label><br>
+                        <select name="tipoDeGrau" id="tipoDeGrau" class="form-control">
+                            <option value="">SELECIONE</option>
+                            <option value="PEQUENO">PEQUENO</option>
+                            <option value="MEDIO">MEDIO</option>
+                            <option value="ALTO">ALTO</option>
+                            <option value="INSIGNIFICANTE">INSIGNIFICANTE</option>
+                        </select>
+                    </div>
+                    <input type="button" value="CALCULAR" class="btn btn-primary" onclick="calcularUFM()">
+                </div>
+                <div class="col-lg-6 borda">
+                    <div id="resultado"></div>
+                </div>
+            </div>
+        </div>
+    </article>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12" >
+                    <div class="informacao">
+                        &copy 2021 Secretaira Municipal do Meio Ambiente || by <a href="#">setor TI</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script type="text/javascript" src="assets/js/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/js/scriptUfm.js"></script>
+    <script type="text/javascript" src="assets/js/somenteNumeros.js"></script>
+</body>
+</html>

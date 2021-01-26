@@ -1,0 +1,30 @@
+body
+{
+    background-color: #77cc6d;
+}
+h2{
+    font-size: 45px;
+    text-align: center;
+    color:#FFF;
+}
+label{
+    font-size: 30px;
+    color:#FFF;
+}
+.informacao{
+    text-align: center;
+    color:#FFF;
+    margin-top: 60px;
+
+}
+#resultado
+{
+    background:none;
+    text-align: center;
+    font-size: 35px;
+    border:none;
+    line-height: 300px;
+    border-radius: 20px;
+    color:#FFF;
+}
+
